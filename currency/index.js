@@ -52,8 +52,6 @@ module.exports = async opts => {
 
     return money.convert(amount, conversionOpts);
   } catch (error) {
-    throw new Error (
-      '💵 Please specify a valid `from` and/or `to` currency value!'
-    );
+      throw new Error('Please specify a valid `from` and/or `to` currency value!');
   }
 };
